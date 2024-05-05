@@ -31,6 +31,7 @@ const Header = () => {
   const mobileMenuToggle = () => {
     setMobileMenu(!mobileMenu);
   };
+  
   const { pathname } = useLocation();
   const pageName = pathname?.split("/")?.filter(Boolean)?.[0];
 
@@ -83,12 +84,12 @@ const Header = () => {
       <div className="flex items-center">
         <div className="hidden md:flex">
           <div className="flex items-center justify-center h-10 w-10 rounded-full hover:bg-[#303030]/[0.6]">
-            <RiVideoAddLine className="text-white text-xl cursor-pointer" />
+            <RiVideoAddLine className="text-white text-2xl cursor-pointer" />
           </div>
           <div className="flex items-center justify-center ml-2 h-10 w-10 rounded-full hover:bg-[#303030]/[0.6]">
-            <FiBell className="text-white text-xl cursor-pointer" />
+            <FiBell className="text-white text-2xl cursor-pointer" />
           </div>
-          <div className="flex h-8 w-8 overflow-hidden rounded-full md:ml-4">
+          <div className="flex h-8 w-8 overflow-hidden rounded-full md:ml-4 cursor-pointer">
             <img src="https://xsgames.co/randomusers/avatar.php?g=female" alt="avatar" />
           </div>
         </div>
